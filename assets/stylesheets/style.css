@@ -1,0 +1,517 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+/* 
+========================
+    NAVIGATION BAR
+========================
+*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 100%;
+    padding: 11px;
+}
+
+img.youtubeLogo {
+    width: 80px;
+}
+
+.fa-bars, 
+.fa-search, 
+.fa-video-camera, 
+.fa-th, 
+.fa-bell, 
+.fa-circle  {
+    
+    font-size: 40px;
+}
+
+.fa-bars::before, 
+.fa-video-camera::before, 
+.fa-th::before, 
+.fa-bell::before {
+    font-size: 18px;
+    color: #6e6e6e;
+}
+
+.fa-search::before {
+    color: #8a8a8a;
+
+}
+
+.headerRight > .fa-circle::before{
+    font-size: 36px;
+    color: salmon;
+    
+}
+
+.headerLeft > * {
+    padding: 0px 0px 0px 25px;
+}
+
+.headerRight > * {
+    padding: 0px 25px 0px 0px ;
+}
+button.fa.fa-search {
+    border: 1px solid #d3d3d3;
+    border-left: none;
+    width: 65px;
+    height: 32px;
+    background-color: #f0f0f0;
+}
+
+.textInput {
+    border: 1px solid #d3d3d3;
+    width: 550px;
+    height: 28px;
+    font-size: 16px;
+}
+
+.headerLeft {
+    display: flex;
+    
+}
+
+.headerCenter {
+    display: flex;
+    align-items: center;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+
+
+/* 
+========================
+    MAIN CONTENT
+========================
+*/
+
+.pageContent {
+    display: flex;
+    margin-top: 10px;
+    
+}
+.pageContent > section {
+    width: 1185px;
+}
+.videoContainer {
+    margin: 13px 320px;
+
+    flex-direction: column;
+}
+
+/* 
+========================
+    text under video
+========================
+*/
+
+.videoContainer > div {
+    padding-top: 20px;
+}
+
+.videoContainer > div > h1 {
+    font-weight: 400;
+    font-size: 18px;
+    color:rgb(3, 3, 3);
+}
+
+.videoContainer > div > .videoData {
+    padding-top: 15px;
+    font-weight: 400;
+    color:rgb(96, 96, 96);
+    font-size: 14px;
+
+}
+
+
+
+
+.fa-thumbs-down{
+    transform: scaleX(-1);
+}
+.fa-thumbs-up::before,
+.fa-thumbs-down::before,
+.fa-share::before,
+.fa-ellipsis-h::before {
+    color:rgb(144, 144, 144);
+    font-size: 20px;
+
+}
+
+.fa-th-list::before {
+    font-size: 16px;
+    color: rgb(144, 144, 144)
+}
+
+.dataOptions {
+    width: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.videoData {
+    color: #606060;
+    font-size: 14px;
+}
+
+div.videoOptionsRight {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+div.videoOptionsRight > *{
+padding: 13px 8px 10px 10px;
+color:rgb(96, 96, 96);
+}
+
+/* 
+========================
+    information box
+========================
+*/
+
+.videoInformation {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(211, 211, 211); 
+    border-bottom: 1px solid rgb(211, 211, 211); 
+    margin-left: 320px;  
+    margin-right: 20px;
+}
+
+.videoInformation > .row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.row1 > .fa-circle-o::before{
+    font-size: 45px;
+    color: rgb(149, 209, 134);
+}
+
+.channelName {
+    color: #030303;
+    font-size: 14px;
+    font-weight: 500;
+}
+.suscribers {
+    color: #606060;
+    font-size: 13px;
+}
+
+.videoInformation > .row1 > div {
+    padding: 10px;
+    flex: 2;
+}
+.videoInformation > .row1 > div > *{
+    padding: 2px
+    
+}
+.suscribeButton {
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    background-color:rgb(182, 1, 1);
+    color: white;
+    width: 105px;
+    height: 35px;
+    border-radius: 2px;
+    font-weight: 500;
+    
+}
+
+.videoInformation > .row2 {
+    margin-left: 50px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.videoInformation > .row2 > * {
+    padding-top: 10px;
+}
+
+.videoDescription {
+    color: #030303;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.showMore {
+    color: #606060;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* 
+========================
+   comment section
+========================
+*/
+
+.commentSection {
+    display: flex;
+    flex-direction: column;
+    margin-left: 320px;
+    margin-right: 20px;
+    
+
+}
+
+.commentCount {
+    color: #030303;
+    font-size: 16px;
+}
+
+
+.commentSection > .row1 > button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.commentSection > .row1 > button > .txt{
+
+    color: #606060;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto';
+}
+.commentSection > .row1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+} 
+
+.fa-align-justify::before{
+    color: #a1a1a1;
+    font-size: 15px;
+}
+
+
+.commentSection > .row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 75px;
+}
+
+.commentSection > .row2 > .fa-circle::before {
+    font-size: 45px;
+    color: salmon;
+}
+
+.commentSection > .row2 > .textInput {
+   flex: 2;
+    align-self: baseline;
+    border:none;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    margin-left: 15px;
+    font-size: 15px;
+    margin-right: -215px;
+    outline: none;
+    transition: .5s ease-in-out
+}
+.commentSection > .row2 > .textInput:focus {
+    border-bottom: 1px solid rgb(58, 58, 58);
+
+}
+.commentSection > .row2 > .buttons {
+    align-self: flex-end;
+}
+.commentSection > .row2 > .buttons > * {
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    color: white;
+    width: 105px;
+    height: 35px;
+    border-radius: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+
+
+.commentSection > .row2 > .buttons > .commentB{
+    background: #adadad;
+}
+.commentSection > .row2 > .buttons > .cancelB {
+    background:none;
+    color: #030303;
+    font-weight: 400;
+}
+
+
+/* 
+========================
+    user comments
+========================
+*/
+
+.userComment {
+    display: flex;
+    flex-direction: column;
+}
+.userComment > .row1{} 
+
+
+
+.userComment > .row1 {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.userComment > .row1 > .fa-circle-o::before{
+    font-size: 45px;
+    color: rgb(233, 224, 142);
+}
+
+
+.userComment > .row1 > div > .commentText {
+    color: #606060;
+    font-size: 13px;
+}
+
+.userComment > .row1 > .userName{
+    color: #030303;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px;
+    align-self: baseline;
+}
+
+.userComment > .row1 > .commentDate{
+    align-self: baseline ;
+    color: #606060;
+    font-size: 13px;
+}
+
+
+.userComment > .row2 {
+    margin-left: 50px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.userComment > .row2 > p {
+    margin-top: -10px;
+
+}
+
+.commentText {
+    color: #030303;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.UCbuttons {
+    margin-left: 50px;
+    margin-right: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.UCbuttons > *:not(.fa-thumbs-up){
+    padding: 13px 8px 10px 10px;
+    color:#606060;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+
+.pageContent > section {
+    
+}
+
+.showReply {
+    flex: 1;
+    margin-left: 50px;
+    color:rgb(6, 95, 212);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* 
+========================
+    SIDE VIDEOS
+========================
+*/
+aside {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    margin-top: 10px;
+}
+
+aside > h1 {
+    margin-bottom: 15px;
+}
+
+aside > .sideVideo > img {
+    width: 170px;
+    height: 95px;
+}
+
+aside > .sideVideo {
+    display: flex;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+aside > .sideVideo > div > *{
+    padding: 0px 0px 5px 8px;
+}
+
+
+aside > .sideVideo > div > .title {
+    color: #030303;
+    font-size: 14px;
+    font-weight: 500;
+}
+aside > .sideVideo > div > .userName, .data {
+    color: #606060;
+    font-size: 13px;
+}
+
+aside > .line {
+    height: 1px;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    margin-top: 9px;
+    margin-bottom: 20px;
+    width: 450px;
+}
